@@ -10,13 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //express routes
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/HOME.html'));
-});
-app.get('/about', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/about.html'));
-});
-app.get('*', function(req, res){
-  res.status(404).sendFile(path.join(__dirname, 'views/404.html'));
-});
+});  
 app.get('/up1', function(req, res){
   res.sendFile(path.join(__dirname, 'views/up1.html'));
 });
@@ -31,10 +25,11 @@ app.get('/up4', function(req, res){
 });
 app.get('/up5', function(req, res){
   res.sendFile(path.join(__dirname, 'views/up5.html'));
+});
 app.get('/HOME', function(req, res){
   res.sendFile(path.join(__dirname, 'views/HOME.html'));
 });
-});
+
 //express server listen
 var server = app.listen(app.get('port'), function(){
   console.log('Server listening on port ',app.get('port'));
