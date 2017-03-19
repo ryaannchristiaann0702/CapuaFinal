@@ -8,7 +8,7 @@ setTimeout(function(){
 
 function x(){
 $.ajax({
-	url: "http://www.omdbapi.com/?i=tt1800741"
+	url: "https://www.omdbapi.com/?i=tt1800741"
 }).done(function(res){
 	console.log(res);
 	let html = `
