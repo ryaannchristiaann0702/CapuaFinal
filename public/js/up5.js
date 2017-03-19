@@ -30,7 +30,8 @@ $.ajax({
     <h3>Country: ${res.Country}</h3>
     <h3>Awards: ${res.Awards}</h3>
     </div>
-    <center>
+    </div>
+    </center>
     
     
   `;

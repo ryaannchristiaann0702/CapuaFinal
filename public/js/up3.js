@@ -18,7 +18,7 @@ $.ajax({
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/89TLbK6o-og" frameborder="0" allowfullscreen></iframe>
 		<div id="container">
 		<div id="left">		
-		</div>		
+			
 		<h3>Type: ${res.Type}</h3>
 		<h3>Released: ${res.Released}</h3>
 		<h3>Runtime: ${res.Runtime}</h3>
@@ -30,7 +30,9 @@ $.ajax({
 		<h3>Language: ${res.Language}</h3>
 		<h3>Country: ${res.Country}</h3>
 		<h3>Awards: ${res.Awards}</h3>
-
+</div>
+</div>
+</center>
 		
 	`;
 	$('#app').html(html);

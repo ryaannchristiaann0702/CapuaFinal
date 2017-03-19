@@ -4,7 +4,7 @@ $('#app').html(`
 `);
 setTimeout(function(){
 	x();
-},1000);
+},1000)
 
 function x(){
 $.ajax({
@@ -30,7 +30,8 @@ $.ajax({
 		<h3>Country: ${res.Country}</h3>
 		<h3>Awards: ${res.Awards}</h3>
 		</div>
-		<center>
+		</div>
+		</center>
 		
 		
 	`;
